@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <style>
+        @keyframes changeimg{
+            20%{background-image: url("https://wallpapercave.com/wp/wp4580144.jpg");}
+            50%{background-image: url("https://th.bing.com/th/id/R.a2346fdcf604db87878567b313a73a48?rik=XCPxghBrp%2bWS6g&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fFrYP8MW.jpg&ehk=gOZmGDWBCYTsb7wFkD33rYjjTEXYUBChjYRG3vuSmd4%3d&risl=&pid=ImgRaw&r=0");}
+            90%{background-image: url("https://i.pinimg.com/originals/ea/fb/07/eafb07549aef22de4e26d5f595c2c22b.jpg");}
+        }
+        .socialmedia{
+            width: 30px;
+            height: 30px;
+
+        }
+        #footerdiv{
+            display: flex;
+            margin-left: 50px;
+        }
+        .teamphoto{
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 50% 50% 0% 0%;
+        }
+        #headdiv{
+            display: flex;
+        }
+        nav{
+            margin-left: 900px;
+        }
+        #logoimg{
+            height: 30px;
+            width: 30px;
+            border: 2px solid brown;
+            border-radius: 50%;
+        }
+        label{
+            margin-left: 20px;
+            font-size: larger;
+            font-family: "Knewave", system-ui;
+
+        }
+        header{
+            background-color: #e4bef7;
+        }
+        h1{
+            font-family: "Jacquard 12", system-ui;
+            text-align: center;
+            color: #7e37a1;
+        }
+        a:hover{
+            background-color: purple;
+            color: aliceblue;
+        }
+        #homediv{
+
+            background-image: url("https://1.bp.blogspot.com/-sNMzt5B_434/UqRMeJqTFXI/AAAAAAAAWy8/S1HlRlOLQ2w/s1600/cute-puppy-298302.jpg");
+            height: 600px;
+            width: 1500px;
+            animation-name: changeimg;
+            animation-duration: 10s;
+            animation-delay: 5s;
+        }
+        legend{
+            text-align: center;
+        }
+        textarea{
+            margin-left: 200px;
+            position: relative;
+            width: 200px;
+        }
+        .inputform{
+            margin-left: 220px;
+            position: relative;
+            width: 200px;
+        }
+        span{
+            margin-left: 800px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="headdiv">
+        <img src="https://cdn.dribbble.com/users/1155826/screenshots/4129733/dog_happy_dribbble.gif" id="logoimg"> 
+        <label>PetPal</label>
+        <nav>
+            <a href="#home"> Home </a>
+            <a href="#team"> Our Team </a>
+            <a href="#contact"> Contactus </a>
+        </nav>
+    </div>
+    </header>
+    <section id="home">
+        <h1> Our Works 1</h1>
+        <div id="homediv">
+        </div>
+    </section>
+    <section id="team">
+        <table>
+            <tr>
+                <td><img src= "https://th.bing.com/th/id/OIP.pFqcVa-wLxxMp2ytf2ZhzgHaFY?w=217&h=180&c=7&r=0&o=5&pid=1.7" class= "teamphoto"></td>
+                <td><img src= "https://t4.ftcdn.net/jpg/00/44/45/93/500_F_44459395_A7c04HVWZ48kPoCP9KmOxRdwEJ8WECfF.jpg" class= "teamphoto"></td>
+                <td><img src= "https://th.bing.com/th/id/OIP.HeBY1ix8lnp4nLsAfTHgEQHaFc?w=236&h=180&c=7&r=0&o=5&pid=1.7" class= "teamphoto"> </td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ipsa hic voluptate exercitationem porro dignissimos quasi? Sed tenetur itaque accusamus impedit veniam. A voluptatem natus, doloremque magnam voluptatum dolorum ad.</td>
+                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo error deleniti aspernatur officiis, magnam voluptates in adipisci labore sunt? Consequuntur eius laborum, tenetur eum assumenda veniam a explicabo nam quidem.</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deleniti error aut repudiandae minus qui amet autem distinctio consequuntur, dolorem delectus ratione officia illum quo animi accusantium odit dicta eos. </td>
+            </tr>
+            
+        </table>
+    </section>
+    <section id="contact">
+            <form>
+            <fieldset>
+                <legend> Contact Us </legend>
+            <label for="name">Name:</label>
+            <input type="text" class="inputform"  required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" class="inputform"  required>
+            <br>
+            <br>
+            <br>
+            <label for="message">Message:</label>
+
+            <textarea cols="30" rows="10" required></textarea>
+            <br>
+            <button type="submit">Send Message</button>
+        </fieldset>
+        </form>
+    </section>
+    <footer>
+        <div id ="footerdiv">
+    Developed By <b> @Indira Devi </b>
+    <span>
+    <a href ="https://www.facebook.com">
+        <img src="https://th.bing.com/th/id/OIP.55DCXbXlKDgEBoZhKxpzLAHaHa?w=187&h=187&c=7&r=0&o=5&pid=1.7"  class = "socialmedia" alt="">
+    </a>
+    <a href ="https://www.instagram.com">
+        <img src="https://th.bing.com/th/id/OIP.XgT9d552B6R9C60Ul2yqkAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7"  class = "socialmedia" alt="">
+    </a>
+    <a href ="https://www.twitter.com">
+        <img src="https://th.bing.com/th/id/OIP.-2yiSRFxDGzINV5OGldPwgHaFH?w=223&h=180&c=7&r=0&o=5&pid=1.7"  class = "socialmedia" alt="">
+    </a>
+</span>
+</div>
+    </footer>
+</body>
+</html>
